@@ -190,7 +190,9 @@ button .btn-default { height: 48px; background-color: #faf9f5; margin-bottom: 0p
 .header { background-color: var(--primary-color); z-index: 9; position: relative; }
 .navbar-brand { float: left; height: 70px; padding: 14px 0px; font-size: 18px; line-height: 20px; }
 .navigation { float: right; }
-.logo { }
+.navbar-brand a img{ 
+  width: 100px;
+}
 
 /*------ Template Navigation -------*/
 #navigation, #navigation ul, #navigation ul li, #navigation ul li a, #navigation #menu-button { margin: 0; padding: 0; border: 0; list-style: none; line-height: 1; display: block; position: relative; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
@@ -1288,3 +1290,14 @@ input[type="checkbox"] .styled:checked + label::after, input[type="radio"] .styl
     color: #ffffff;
   }
   */
+
+  /*
+    Default Nav tab
+  */
+  .nav-tabs>li>a{ 
+    font-weight: 400;
+  }
+  .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{ 
+    background-color: var(--primary-color);
+    color: #fff;
+  }
